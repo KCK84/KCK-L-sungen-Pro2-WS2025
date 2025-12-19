@@ -2,23 +2,24 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Lösung Anzeige</title>
+    <title>Maximum Lösung</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
 
     <style>
-        /* Fenster-Design für den Code-Block */
+        /* Fenster-Container für den Code-Block */
         .code-window {
             display: block; 
-            height: 400px; 
+            height: 450px; 
             border: 1px solid #ccc; 
-            border-radius: 6px; 
+            border-radius: 8px; 
             overflow: hidden; 
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            background-color: #f4f4f4;
         }
 
-        /* Styling innerhalb von zero-md für vollständige Anzeige */
+        /* Vereinheitlicht das Design für alle Code-Zeilen */
         zero-md::part(scrollable) {
             background-color: #f4f4f4 !important;
         }
@@ -27,9 +28,9 @@
 <body>
     <header>
         <nav>
-            <a href="zzUebung_loesungen.html">← Zurück zur Übungsübersicht</a>
+            <a href="zzUebung_loesungen.html">← Zurück zur Übersicht</a>
         </nav>
-        <h1>Lösung: Maximum Lösungen</h1>
+        <h1>Lösung: Maximum-test</h1>
     </header>
 
     <main>
@@ -38,16 +39,16 @@
             <zero-md src="Maximum.java">
                 <template>
                     <style>
-                        pre { 
+                        /* Erzwingt gleiches Aussehen für Imports und Klassen */
+                        pre, code { 
                             background: #f4f4f4 !important; 
                             color: #333 !important;
                             padding: 20px;
                             margin: 0;
-                            height: 100%;
-                            overflow: auto;
+                            font-family: 'Courier New', monospace;
                             font-size: 14px;
-                            line-height: 1.5;
-                            white-space: pre; /* Behält Formatierung ab Zeile 1 bei */
+                            line-height: 1.6;
+                            white-space: pre; /* Verhindert das Verschlucken von Zeilen */
                         }
                     </style>
                 </template>
@@ -59,15 +60,14 @@
             <zero-md src="MaximumTest.java">
                 <template>
                     <style>
-                        pre { 
+                        pre, code { 
                             background: #f4f4f4 !important; 
                             color: #333 !important;
                             padding: 20px;
                             margin: 0;
-                            height: 100%;
-                            overflow: auto;
+                            font-family: 'Courier New', monospace;
                             font-size: 14px;
-                            line-height: 1.5;
+                            line-height: 1.6;
                             white-space: pre;
                         }
                     </style>
@@ -76,13 +76,13 @@
         </div>
 
         <p>
-            <a href="Maximum.java" download class="button">Maximum Klasse herunterladen (.java)</a>
-            <a href="MaximumTest.java" download class="button">MaximumTest Klasse herunterladen (.java)</a>
+            <a href="Maximum.java" download class="button">Maximum-Klasse laden</a>
+            <a href="MaximumTest.java" download class="button">Test-Klasse laden</a>
         </p>
     </main>
 
     <footer>
-        <p>Lösungen by KCK - PRO2</p>
+        <p>Lösungen PRO2 - WS 2025 by KCK</p>
     </footer>
 </body>
 </html>
