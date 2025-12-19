@@ -10,11 +10,11 @@
         .code-window {
             display: block; 
             height: 500px; 
-            border: 1px solid #444; 
+            border: 1px solid #ccc; 
             border-radius: 8px; 
             overflow: hidden; 
             margin-bottom: 30px;
-            background-color: #f4f4f4; /* Sicherer Hintergrund */
+            background-color: #f4f4f4;
         }
     </style>
 </head>
@@ -27,16 +27,17 @@
     <main>
         <p>Hauptklasse "Maximum":</p>
         <div class="code-window">
-            <zero-md src="Maximum.java">
+            <zero-md src="Maximum.java" no-config>
                 <template>
                     <style>
-                        /* Dieser Teil erzwingt, dass ALLES (Imports + Klasse) schwarz angezeigt wird */
-                        pre, code, span { 
+                        pre { 
                             background: #f4f4f4 !important; 
                             color: #000000 !important; /* Tiefschwarz */
                             font-family: 'Courier New', monospace !important;
-                            font-size: 15px !important;
-                            line-height: 1.6 !important;
+                            font-size: 14px !important;
+                            line-height: 1.5 !important;
+                            padding: 20px;
+                            margin: 0;
                             white-space: pre !important;
                         }
                     </style>
@@ -46,15 +47,17 @@
 
         <p>Test-Klasse "MaximumTest":</p>
         <div class="code-window">
-            <zero-md src="MaximumTest.java">
+            <zero-md src="MaximumTest.java" no-config>
                 <template>
                     <style>
-                        pre, code, span { 
+                        pre { 
                             background: #f4f4f4 !important; 
                             color: #000000 !important; 
                             font-family: 'Courier New', monospace !important;
-                            font-size: 15px !important;
-                            line-height: 1.6 !important;
+                            font-size: 14px !important;
+                            line-height: 1.5 !important;
+                            padding: 20px;
+                            margin: 0;
                             white-space: pre !important;
                         }
                     </style>
