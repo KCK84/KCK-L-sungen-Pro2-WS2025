@@ -10,24 +10,33 @@
 <body>
     <header>
         <nav>
-            <a href="../index.html">← Zurück zur Übersicht</a>
+            <a href="zzUebung_loesungen.html">← Zurück zur Übungsübersicht</a>
         </nav>
         <h1>Lösung: Mitarbeiterverwaltung</h1>
     </header>
 
     <main>
         <zero-md src="Anwendung.java">
-            <template>
-                <style>
-                    pre { 
-                        background: #f6f8fa !important; 
-                        border: 1px solid #ddd;
-                        border-radius: 6px;
-                        padding: 16px;
-                    }
-                </style>
-            </template>
-        </zero-md>
+    		<template>
+      		  <style>
+          	  /* Fix für die Sichtbarkeit: Hintergrund grau, Schrift schwarz */
+          		  pre { 
+             		background: #f4f4f4 !important; 
+               		color: #333 !important; /* Erzwingt dunkle Schrift */
+                	border: 1px solid #ccc;
+                	border-radius: 6px;
+                	padding: 1.5rem;
+                	overflow-x: auto; /* Erlaubt horizontales Scrollen bei langem Code */
+                	white-space: pre; /* Behält Formatierung bei */
+            	  }
+            	/* Falls zero-md Code-Highlighting nutzt, stellen wir sicher, dass die Basis-Farbe stimmt */
+           		 code {
+               		 color: #333 !important;
+                	font-family: 'Courier New', Courier, monospace;
+           		 }
+        	</style>
+   		 </template>
+		</zero-md>
 
         <p>
             <a href="Anwendung.java" download class="button">Quellcode herunterladen (.java)</a>
@@ -35,7 +44,7 @@
     </main>
 
     <footer>
-        <p>HFT Stuttgart - PRO2</p>
+        <p>Lösungen by KCK - PRO2</p>
     </footer>
 </body>
 </html>
