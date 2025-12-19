@@ -2,60 +2,82 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Maximum Loesungen</title>
+    <title>Lösung Anzeige</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+
+    <style>
+        /* Fenster-Design für den Code-Block */
+        .code-window {
+            display: block; 
+            height: 400px; 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
+            overflow: hidden; 
+            margin-bottom: 20px;
+        }
+
+        /* Styling innerhalb von zero-md für vollständige Anzeige */
+        zero-md::part(scrollable) {
+            background-color: #f4f4f4 !important;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <a href="zzUebung_loesungen.html">← Zurück zur Übungsübersicht</a>
         </nav>
-        <h1>Lösung: Maximum-test</h1>
+        <h1>Lösung: Maximum Lösungen</h1>
     </header>
 
     <main>
-    <p>Hauptklasse "Maximum":</p>
-    <zero-md src="Maximum.java" style="display: block; height: 400px; border: 1px solid #ccc; border-radius: 6px; overflow: hidden; margin-bottom: 20px;">
-        <template>
-            <style>
-                /* Sorgt dafür, dass das CSS den Container füllt */
-                pre { 
-                    background: #f4f4f4 !important; 
-                    color: #333 !important;
-                    padding: 20px;
-                    margin: 0;
-                    height: 100%;
-                    overflow: auto; /* Scrollbalken innerhalb des Fensters */
-                    font-size: 14px;
-                    line-height: 1.5;
-                }
-            </style>
-        </template>
-    </zero-md>
+        <p>Hauptklasse "Maximum":</p>
+        <div class="code-window">
+            <zero-md src="Maximum.java">
+                <template>
+                    <style>
+                        pre { 
+                            background: #f4f4f4 !important; 
+                            color: #333 !important;
+                            padding: 20px;
+                            margin: 0;
+                            height: 100%;
+                            overflow: auto;
+                            font-size: 14px;
+                            line-height: 1.5;
+                            white-space: pre; /* Behält Formatierung ab Zeile 1 bei */
+                        }
+                    </style>
+                </template>
+            </zero-md>
+        </div>
 
-    <p>Test-Klasse "MaximumTest":</p>
-    <zero-md src="MaximumTest.java" style="display: block; height: 400px; border: 1px solid #ccc; border-radius: 6px; overflow: hidden;">
-        <template>
-            <style>
-                pre { 
-                    background: #f4f4f4 !important; 
-                    color: #333 !important;
-                    padding: 20px;
-                    margin: 0;
-                    height: 100%;
-                    overflow: auto;
-                    font-size: 14px;
-                }
-            </style>
-        </template>
-    </zero-md>
-   		 <p>
-            <a href="Maximum.java" download class="button">Maximum-Klasse herunterladen (.java)</a>
-        </p>
+        <p>Test-Klasse "MaximumTest":</p>
+        <div class="code-window">
+            <zero-md src="MaximumTest.java">
+                <template>
+                    <style>
+                        pre { 
+                            background: #f4f4f4 !important; 
+                            color: #333 !important;
+                            padding: 20px;
+                            margin: 0;
+                            height: 100%;
+                            overflow: auto;
+                            font-size: 14px;
+                            line-height: 1.5;
+                            white-space: pre;
+                        }
+                    </style>
+                </template>
+            </zero-md>
+        </div>
+
         <p>
-            <a href="MaximumTest.java" download class="button">Maximum Test-Klasse herunterladen (.java)</a>
+            <a href="Maximum.java" download class="button">Maximum Klasse herunterladen (.java)</a>
+            <a href="MaximumTest.java" download class="button">MaximumTest Klasse herunterladen (.java)</a>
         </p>
     </main>
 
