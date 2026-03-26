@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Mitarbeiterverwaltung_Loesung</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="CodeWindowStyle.css">
     
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
 </head>
@@ -19,19 +20,19 @@
         <zero-md src="Anwendung.java">
     		<template>
       		  <style>
-          	  /* Fix für die Sichtbarkeit: Hintergrund grau, Schrift schwarz */
+          	  /* Sichtbarkeit: Hintergrund grau, Schrift schwarz */
           		  pre { 
              		background: #f4f4f4 !important; 
-               		color: #333 !important; /* Erzwingt dunkle Schrift */
+               		color: #333 !important; /* dunkle Schrift */
                 	border: 1px solid #ccc;
                 	border-radius: 6px;
                 	padding: 1.5rem;
-                	overflow-x: auto; /* Erlaubt horizontales Scrollen bei langem Code */
-                	white-space: pre; /* Behält Formatierung bei */
+                	overflow-x: auto; /* horizontales Scrollen bei langem Code */
+                	white-space: pre; /* Behält Formatierung,*/
             	  }
             	/* Falls zero-md Code-Highlighting nutzt, stellen wir sicher, dass die Basis-Farbe stimmt */
            		 code {
-               		 color: #333 !important;
+               		 color: black;
                 	font-family: 'Courier New', Courier, monospace;
            		 }
         	</style>
