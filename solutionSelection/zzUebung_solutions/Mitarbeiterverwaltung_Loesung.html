@@ -17,27 +17,17 @@
     </header>
 
     <main>
-        <zero-md src="Anwendung.java">
-    		<template>
-      		  <style>
-          	  /* Sichtbarkeit: Hintergrund grau, Schrift schwarz */
-          		  pre { 
-             		background: #f4f4f4 !important; 
-               		color: #333 !important; /* dunkle Schrift */
-                	border: 1px solid #ccc;
-                	border-radius: 6px;
-                	padding: 1.5rem;
-                	overflow-x: auto; /* horizontales Scrollen bei langem Code */
-                	white-space: pre; /* Behält Formatierung,*/
-            	  }
-            	/* Falls zero-md Code-Highlighting nutzt, stellen wir sicher, dass die Basis-Farbe stimmt */
-           		 code {
-               		 color: black;
-                	font-family: 'Courier New', Courier, monospace;
-           		 }
-        	</style>
-   		 </template>
-		</zero-md>
+        <div class="code-window">
+            <div class="code-window-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span style="margin-left:10px;">Anwendung.java</span>
+            </div>
+            <div class="code-window-content">
+                <zero-md src="Anwendung.java" no-config></zero-md>
+            </div>
+        </div>
 
         <p>
             <a href="Anwendung.java" download class="button">Quellcode herunterladen (.java)</a>

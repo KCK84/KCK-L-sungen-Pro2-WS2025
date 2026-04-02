@@ -16,49 +16,29 @@
     </header>
 
     <main>
-        <zero-md src="Bruch.java">
-    		<template>
-      		  <style>
-          	  /* Fix für die Sichtbarkeit: Hintergrund grau, Schrift schwarz */
-          		  pre { 
-             		background: #f4f4f4 !important; 
-               		color: #333 !important; /* Erzwingt dunkle Schrift */
-                	border: 1px solid #ccc;
-                	border-radius: 6px;
-                	padding: 1.5rem;
-                	overflow-x: auto; /* Erlaubt horizontales Scrollen bei langem Code */
-                	white-space: pre; /* Behält Formatierung bei */
-            	  }
-            	/* Falls zero-md Code-Highlighting nutzt, stellen wir sicher, dass die Basis-Farbe stimmt */
-           		 code {
-               		 color: #333 !important;
-                	font-family: 'Courier New', Courier, monospace;
-           		 }
-        	</style>
-   		 </template>
-		</zero-md>
-		<p> Test-Klasse "BruchTest":</p>
-		 <zero-md src="BruchTest.java">
-    		<template>
-      		  <style>
-          	  /* Fix für die Sichtbarkeit: Hintergrund grau, Schrift schwarz */
-          		  pre { 
-             		background: #f4f4f4 !important; 
-               		color: #333 !important; /* Erzwingt dunkle Schrift */
-                	border: 1px solid #ccc;
-                	border-radius: 6px;
-                	padding: 1.5rem;
-                	overflow-x: auto; /* Erlaubt horizontales Scrollen bei langem Code */
-                	white-space: pre; /* Behält Formatierung bei */
-            	  }
-            	/* Falls zero-md Code-Highlighting nutzt, stellen wir sicher, dass die Basis-Farbe stimmt */
-           		 code {
-               		 color: #333 !important;
-                	font-family: 'Courier New', Courier, monospace;
-           		 }
-        	</style>
-   		 </template>
-		</zero-md>
+        <div class="code-window">
+            <div class="code-window-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span style="margin-left:10px;">Bruch.java</span>
+            </div>
+            <div class="code-window-content">
+                <zero-md src="Bruch.java" no-config></zero-md>
+            </div>
+        </div>
+        <p> Test-Klasse "BruchTest":</p>
+        <div class="code-window">
+            <div class="code-window-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span style="margin-left:10px;">BruchTest.java</span>
+            </div>
+            <div class="code-window-content">
+                <zero-md src="BruchTest.java" no-config></zero-md>
+            </div>
+        </div>
 
         <p>
             <a href="Bruch.java" download class="button">Bruch-Klasse herunterladen (.java)</a>
