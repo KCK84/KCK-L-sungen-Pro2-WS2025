@@ -40,10 +40,8 @@
 }
 
 zero-md pre, .code-window pre {
-	background: none !important;
 	color: #f8f8f2 !important;
 	font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace !important;
-	font-size: 15px !important;
 	line-height: 1.6 !important;
 	padding: 16px 18px !important;
 	margin: 0 !important;
@@ -54,32 +52,13 @@ zero-md pre, .code-window pre {
 }
 
 zero-md code span.token.keyword,
-zero-md code span.token.namespace,
-zero-md code span.token.package {
-	color: #f8f8f2 !important;
-}
-
-zero-md pre, .code-window pre {
-	background: #222 !important;
-	color: #f8f8f2 !important;
-	font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace !important;
-	font-size: 15px !important;
-	line-height: 1.6 !important;
-	padding: 16px 18px !important;
-	margin: 0 !important;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-	white-space: pre !important;
-	overflow-x: auto;
-}
-
 zero-md code span.token.keyword,
 zero-md code span.token.namespace,
 zero-md code span.token.package {
 	color: #f8f8f2 !important;
 }
-
 .code-window-content pre, .code-window-content code {
-    background: #fff !important;
-    color: #222;
-}
+	background: #fff !important;
+	color: #222;
+	/* line-height removed here to avoid duplication */
+}/* line-height removed here to avoid duplication */
