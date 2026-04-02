@@ -6,18 +6,7 @@
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
 
-    <style>
-        .code-window {
-            display: block;
-            height: auto;
-            margin-bottom: 30px;
-            /* Kein Rahmen, kein Hintergrund, keine Rundung */
-            border: none;
-            border-radius: 0;
-            background: none;
-            overflow: visible;
-        }
-    </style>
+    <link rel="stylesheet" href="CodeWindowStyle.css">
 </head>
 <body>
     <header>
@@ -28,49 +17,12 @@
     <main>
         <p>Hauptklasse <strong>"Maximum"</strong>:</p>
         <div class="code-window">
-            <zero-md src="Maximum.java" no-config>
-                <template>
-                    <style>
-                        pre {
-                            background: none !important;
-                            color: #ffffff !important;
-                            font-family: 'Courier New', monospace !important;
-                            font-size: 14px !important;
-                            line-height: 1.5 !important;
-                            padding: 0;
-                            margin: 0;
-                            white-space: pre !important;
-                        }
-                        /* Package-Zeile wie Code einfärben */
-                        code span.token.keyword, code span.token.namespace, code span.token.package {
-                            color: #fdfafa !important;
-                        }
-                    </style>
-                </template>
-            </zero-md>
+            <zero-md src="Maximum.java" no-config></zero-md>
         </div>
 
         <p>Test-Klasse "MaximumTest":</p>
         <div class="code-window">
-            <zero-md src="MaximumTest.java" no-config>
-                <template>
-                    <style>
-                        pre {
-                            background: none !important;
-                            color: #fbf9f9 !important;
-                            font-family: 'Courier New', monospace !important;
-                            font-size: 14px !important;
-                            line-height: 1.5 !important;
-                            padding: 0;
-                            margin: 0;
-                            white-space: pre !important;
-                        }
-                        code span.token.keyword, code span.token.namespace, code span.token.package {
-                            color: #f9f7f7 !important;
-                        }
-                    </style>
-                </template>
-            </zero-md>
+            <zero-md src="MaximumTest.java" no-config></zero-md>
         </div>
     </main>
     <footer>
