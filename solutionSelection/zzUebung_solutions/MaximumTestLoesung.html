@@ -8,13 +8,14 @@
 
     <style>
         .code-window {
-            display: block; 
-            height: 500px; 
-            border: 1px solid #ccc; 
-            border-radius: 8px; 
-            overflow: hidden; 
+            display: block;
+            height: auto;
             margin-bottom: 30px;
-            background-color: #f4f4f4;
+            /* Kein Rahmen, kein Hintergrund, keine Rundung */
+            border: none;
+            border-radius: 0;
+            background: none;
+            overflow: visible;
         }
     </style>
 </head>
@@ -30,15 +31,19 @@
             <zero-md src="Maximum.java" no-config>
                 <template>
                     <style>
-                        pre { 
-                            background: #f4f4f4 !important; 
-                            color: #000000 !important; /* Tiefschwarz */
+                        pre {
+                            background: none !important;
+                            color: #222 !important;
                             font-family: 'Courier New', monospace !important;
                             font-size: 14px !important;
                             line-height: 1.5 !important;
-                            padding: 20px;
+                            padding: 0;
                             margin: 0;
                             white-space: pre !important;
+                        }
+                        /* Package-Zeile wie Code einfärben */
+                        code span.token.keyword, code span.token.namespace, code span.token.package {
+                            color: #222 !important;
                         }
                     </style>
                 </template>
@@ -50,17 +55,19 @@
             <zero-md src="MaximumTest.java" no-config>
                 <template>
                     <style>
-                        pre { 
-                            background: #f4f4f4 !important; 
-                            color: #000000 !important; 
+                        pre {
+                            background: none !important;
+                            color: #222 !important;
                             font-family: 'Courier New', monospace !important;
                             font-size: 14px !important;
                             line-height: 1.5 !important;
-                            padding: 20px;
+                            padding: 0;
                             margin: 0;
                             white-space: pre !important;
                         }
-
+                        code span.token.keyword, code span.token.namespace, code span.token.package {
+                            color: #222 !important;
+                        }
                     </style>
                 </template>
             </zero-md>
