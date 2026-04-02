@@ -78,3 +78,8 @@ zero-md code span.token.namespace,
 zero-md code span.token.package {
 	color: #f8f8f2 !important;
 }
+
+.code-window-content pre, .code-window-content code {
+    background: #fff !important;
+    color: #222;
+}
